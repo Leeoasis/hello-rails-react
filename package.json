@@ -1,21 +1,33 @@
 {
   "name": "app",
   "private": "true",
+  "main": "index.js",
   "dependencies": {
-    "@hotwired/stimulus": "^3.2.1",
-    "@hotwired/turbo-rails": "^7.3.0",
+    "@reduxjs/toolkit": "^1.9.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4"
+    "react-redux": "^8.0.5",
+    "react-router": "^6.10.0",
+    "redux-thunk": "^2.4.2",
+    "react-router-dom": "^6.9.0",
+    "axios": "^1.3.5"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "start": "bin/dev",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch --mode development"
   },
   "devDependencies": {
     "@babel/core": "^7.22.8",
     "@babel/preset-env": "^7.22.7",
     "@babel/preset-react": "^7.22.5",
-    "babel-loader": "^9.1.3"
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+
   }
 }
